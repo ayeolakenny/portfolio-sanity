@@ -37,7 +37,7 @@ const Post = () => {
           {postData &&
             postData.map((post: any, index: any) => {
               return (
-                <article className="cursor-pointer">
+                <article className="cursor-pointer" key={index}>
                   <Link
                     href={`post/${post.slug.current}`}
                     key={post.slug.current}
